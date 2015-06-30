@@ -1,8 +1,6 @@
 ROCK
 ====
 
-**VERSION 0.6.0**
-
 **rock** is a high-performance library for representing and manipulating *sparse tensors*, i.e., multi-dimensional numerical arrays where most elements are equal to zero. A compact bit field representation of the tensor indices reduces the memory requirements and speeds up sorting of the tensor elements. A special purpose radix sorting algorithm allows for up to 20 times faster sorting compared to `qsort` in the C standard library. The primary features of the **rock** library is to sort, partition, distribute, and store sparse and incomplete tensors.
 
 Introduction
