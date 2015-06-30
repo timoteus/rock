@@ -1,0 +1,13 @@
+language: c
+compiler:
+    - gcc
+sudo: required
+before_install: 
+    - sudo apt-get update
+    - sudo wget https://raw.githubusercontent.com/Kitware/CMake/master/Modules/FindOpenMP.cmake -O `find / -name "FindOpenMP.cmake"`
+install:
+    - sudo apt-get -qq install make cmake valgrind
+    - sudo apt-get -qq install openmpi-bin openmpi-doc libopenmpi-dev
+    - sudo apt-get -qq install libhdf5-openmpi-1.8.4 libhdf5-openmpi-dev
+    - sudo apt-get -qq install libbsd-dev
+script: mkdir build && cd build && cmake .. && make && make check memcheck
