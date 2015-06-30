@@ -1,0 +1,2 @@
+#cmakedefine ROCK_WORD_SIZE_64
+#cmakedefine ROCK_ELEM_FLOAT

@@ -1,0 +1,14 @@
+{
+   _dl_allocate_tls
+   Memcheck:Leak
+   fun:calloc
+   fun:_dl_allocate_tls
+   fun:pthread_create@@GLIBC_2.*
+   obj:/usr/lib/x86_64-linux-gnu/libgomp.so.1.*
+   fun:indx_sort
+   fun:rock_indx_sort_alt
+   fun:rock_indx_sort
+   fun:test
+   fun:test_rock_indx_sort
+   fun:main
+}
