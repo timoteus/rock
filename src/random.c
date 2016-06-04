@@ -13,7 +13,7 @@ rock_uint_random(rock_uint_t range)
     return ROCK_ERR;
 #else
     if (range > RAND_MAX) {
-        return ROCK_ERR;
+        return ROCK_BAD_INPUT;
     }
     uint32_t threshold = -range % range;
     for (;;) {
