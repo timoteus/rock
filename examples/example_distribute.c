@@ -28,7 +28,7 @@ int main(int argc, char **argv)
         rock_uint_t dim_size[] = {300, 2, 25000};
         desc = rock_desc_init(order, dim_size);
 
-        /** Initialize multi-partition that matches processor mesh. */
+        /* Initialize multi-partition that matches processor mesh. */
         mpart = rock_mpart_init(mesh->order, mesh->dim_size);
 
         /* Create partition based on tensor space. */
